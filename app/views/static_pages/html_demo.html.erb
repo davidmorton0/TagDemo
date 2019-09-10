@@ -1,0 +1,298 @@
+&lt;html&gt;
+<head>
+ &lt;head&gt;
+ <title>&lt;title&gt;</title>
+ <%= render 'layouts/rails_default' %>
+</head>
+<header class="navbar navbar-fixed-top navbar-inverse">
+ &lt;header&gt;
+ <%= link_to "Home", home_path %>
+ <%= link_to "Html", html_demo_path %>
+ <%= link_to "Css", css_demo_path %>
+</header>
+ <body>&lt;body&gt;
+  <div class="container">
+   <h1>Html tag demo</h1>
+   <br>
+   No tags
+   <br><br>
+   <abbr title="Doesn't actually have to be an abbreviation">Abbreviation</abbr>
+   <br><br>
+   <address>
+   An address<br>
+   An address<br>
+   An address
+   </address> 
+   <b>bold</b>text
+   <br><br>
+   <bdo dir="rtl">
+   -Bi-Directional Override. <bdi> -Bi-Directional Isolation. </bdi> -Bi-Directional Override.
+   </bdo> 
+   <br><br>
+    <blockquote cite="www.example.com">
+   A blockquote
+   </blockquote> 
+   <cite>cite</cite>
+   <br><br>
+   <code>code</code>
+   <br><br>
+   <del>deleted text</del>
+   <br><br>
+   <def>definition</def>
+   <br><br>
+   <em>emphasised</em>
+   <br><br>
+   <i>italics</i>
+   <br><br>
+   <ins>inserted</ins>
+   <br><br>
+   <kbd>keyboard input</kbd> 
+   <br><br>
+   <mark>marked text</mark>
+   <br><br>
+   <meter value="7" min="0" max="10"></meter> meter
+   <br><br>
+   <pre>preformatted text</pre>
+   <br><br>
+   <progress value="40" max="100"></progress> progress
+   <br><br>
+   <q>a short quotation</q>
+   <br><br>
+   <rp>ruby text</rp>ruby text
+   <br><br>
+   <ruby>普通话</ruby><rt>East Asian ruby annotation</rt>
+   <br><br>
+   <s>Incorrect text</s>
+   <br><br>
+   <samp>sample output from a computer program</samp>
+   <br><br>
+   <strong>strong</strong>
+   <br><br>
+   s<sub>ubscript text</sub>
+   <br><br>
+   s<sup>uperscript text</sup>
+   <br><br>
+   <template>template</template> template
+   <br><br>
+   <time>09:00 A time</time>
+   <br><br>
+   <u>different style (underlined)</u>
+   <br><br>
+   <var>a variable</var>
+   <br><br>
+   <wbr>word break opportunity</wbr>
+   <br><br>
+   <h1>heading 1</h1>
+   <br><br>
+   <h2>heading 2</h2>
+   <br><br>
+   <h3>heading 3</h3>
+   <br><br>
+   <h4>heading 4</h4>
+   <br><br>
+   <h5>heading 5</h5>
+   <br><br>
+   <h6>heading 6</h6>
+   <br><br>
+   <p>new paragraph</p>
+   <br><br>
+   line<br>break
+   <br><br>
+   <hr>to separate content (horizontal rule)
+   <br><br>
+   <!--a comment-->a comment
+   <br><br>
+    <form action="/home" method="get">
+     Form: <input type="text" name="input"><br>
+     <input type="submit" value="input">
+   </form> 
+   <br><br>
+    <textarea rows="2" cols="10">
+   textarea
+   </textarea> 
+   <br><br>
+   <button type="button">button</button> 
+   <br><br>
+   <select>
+    <option value="select">select</option>
+    <option value="option">option</option>
+   </select> 
+   <br><br>
+    <select>
+   <optgroup label="option">
+    <option value="option 1">option 1</option>
+    <option value="option 2">option 2</option>
+   </optgroup>
+   <optgroup label="option">
+    <option value="option 1">option 1</option>
+    <option value="option 2">option 2</option>
+   </optgroup>
+   </select>
+   <br><br>
+    <form action="/home">
+     <label for="label">label</label>
+     <input type="radio" name="input" id="input" value="input"><br>
+     <input type="submit" value="Submit">
+   </form> 
+   <br><br>
+   <fieldset>
+    <legend>legend</legend>
+    fieldset <input type="text"><br>
+    input <input type="text"><br>
+   </fieldset>
+   <br><br>
+   <input list="datalist">
+   <datalist id="datalist">
+    <option value="datalist">
+   </datalist>
+   <br><br>
+   <output name="x" for="a b"></output>
+   <br><br>
+   <form oninput="x.value=100">0
+   <input type="range" id="a" value="50">range
+   +<input type="text" id="b" value="50">text
+   =<output name="x" for="a b">output</output>
+   </form>
+   <br><br>
+   <iframe src="/home"></iframe> iframe
+   <br><br>
+   <img src="/assets/image.jpg" alt="img" height="42" width="42"> img
+   <br><br>
+   <img src="/assets/image.jpg" width="100" height="100" usemap="#map">
+   <map name="planetmap">
+     <area shape="rect" coords="0,0,50,50" href="/assets/image.jpg" alt="map">
+     <area shape="circle" coords="80,80,10" href="/assets/image.jpg" alt="map">
+   </map> 
+   <br><br>
+   <canvas id="myCanvas"></canvas>
+   <script>
+   var canvas = document.getElementById("myCanvas");
+   var ctx = canvas.getContext("2d");
+   ctx.fillStyle = "#FF0000";
+   ctx.fillRect(0, 0, 80, 80);
+   </script>canvas
+   <br><br>
+    <figure>
+     <figcaption>figure figcaption</figcaption>
+   </figure> 
+   <br><br>
+    <picture>
+     <source media="(min-width: 100px)" srcset="/assets/image.jpg">
+     <source media="(min-width: 1000px)" srcset="/assets/image.jpg">
+     <img src="/assets/image.jpg" alt="picture" style="width:auto;">
+   </picture> 
+   <br><br>
+    <svg width="100" height="100">
+     <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />svg
+   </svg> 
+   <br><br>
+    <a href="/home">a link</a> 
+   <br><br>
+    <link rel="stylesheet" type="text/css" href="css.css">link to css
+   <br><br>
+    <nav>
+     <a href="/home">nav</a>
+     <a href="/home">nav</a>
+     <a href="/home">nav</a>
+   </nav> 
+   <br><br>
+    <ul>
+     <li>un</li>
+     <li>ordered</li>
+     <li>list</li>
+     <li>li</li>
+   </ul> 
+   <br><br>
+   <ol>
+     <li>ordered</li>
+     <li>list</li>
+     <li>li</li>
+   </ol>
+   <br><br>
+    <dl>
+     <dt>description list dl</dt>
+     <dd>list</dd>
+     <dt>dt</dt>
+     <dd>dd</dd>
+   </dl> 
+   <br><br>
+   <style>
+   thead {color:green;}
+   tbody {color:blue;}
+   tfoot {color:white;}
+   
+   table, th, td {
+     border: 1px solid black;
+   }
+   </style>
+   style
+    <table>
+    <caption>table caption</caption>
+    <colgroup>
+       <col span="2" style="background-color:red">
+       <col style="background-color:yellow">
+     </colgroup>
+    <thead>
+     <tr>
+       <th>colgroup</th>
+       <th>table</th>
+       <th>thead</th>
+       <th>th</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+       <td>tr</td>
+       <td>tbody</td>
+       <td>td</td>
+       <td>td</td>
+     </tr>
+     </tbody>
+     <tfoot>
+     <tr>
+       <td>tr</td>
+       <td>tfoot</td>
+       <td>td</td>
+       <td>td</td>
+     </tr>
+     </tfoot>
+   </table> 
+   <br><br>
+   <p> style   </p><style> p {color:red;} </style> style<p></p>
+   <br><br>
+   <div>div</div>
+   <br><br>
+   <p>span <span style="color:black">span</span> span</p> 
+   <br><br>
+   <main>main</main>
+   <br><br>
+   <article>article</article>
+   <br><br>
+   <aside>aside</aside>
+   <br><br>
+   <details>details</details>
+   <br><br>
+   <dialog>dialog</dialog>
+   <br><br>
+   <summary>summary</summary>
+   <br><br>
+   <data>data</data>
+   <br><br>
+   <meta>meta</meta>
+   <br><br>
+   <base>base</base>
+   <br><br>
+   <script>script</script>
+   <br><br>
+   <noscript>noscript</noscript>
+   <br><br>
+   <embed>embed</embed>
+   <br><br>
+   <object>object</object>
+   <br><br>
+   <param>param</param>
+  </div>
+ </body>
+<footer class="footer">
+ &lt;footer&gt;
+</footer>

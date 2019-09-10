@@ -1,2 +1,20 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<head>
+ <title>Web demo</title>
+ <%= render 'layouts/rails_default' %>
+</head>
+<header class="navbar navbar-fixed-top navbar-inverse">
+ <%= link_to "Home", home_path %>
+ <%= link_to "Html", html_demo_path %>
+ <%= link_to "Css", css_demo_path %>
+</header>
+<body>
+ <div class="container">
+    <ul>
+        <li><%= link_to "Home", home_path %></li>
+        <li><%= link_to "Html", html_demo_path %></li>
+        <li><%= link_to "Css", css_demo_path %></li>
+    </ul>
+ </div>
+</body>
+<footer class="footer">
+</footer>
