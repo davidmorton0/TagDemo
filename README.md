@@ -1,6 +1,6 @@
 # README
 
-A sample set of information pages about London made using Ruby on Rails to test static web pages
+Web pages written as a demo for html and css
 
 ## Getting started
 
